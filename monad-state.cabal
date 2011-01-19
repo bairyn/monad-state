@@ -10,7 +10,7 @@ maintainer:            KrabbyKrap@gmail.com
 synopsis:              Utility library for monads, particularly those involving state
 description:           Utility library for monads, particularly those involving state
 category:              Data
-tested-with:           GHC == 6.12.3
+tested-with:           GHC == 6.12.3, GHC == 7.0.1
 
 library
     hs-source-dirs:    src
