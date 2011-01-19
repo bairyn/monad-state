@@ -17,7 +17,6 @@ library
     build-depends:     base >= 4 && < 5, fclabels, transformers, monads-tf, AbortT-transformers
     exposed-modules:   Control.Monad.Abort, Control.Monad.Abort.Class, Control.Monad.Abort.Instances, Control.Monad.Record, Control.Monad.Runnable, Control.Monad.Short, System.Timeout.Monad
     ghc-options:       -Wall
-    extensions:        TypeFamilies, MultiParamTypeClasses, TypeOperators, PostfixOperators, FlexibleInstances, FlexibleContexts, TypeSynonymInstances
 
 source-repository head
     type:              darcs
