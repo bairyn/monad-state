@@ -1,7 +1,5 @@
 {-# LANGUAGE MultiParamTypeClasses, TypeFamilies, TypeOperators, PostfixOperators, FlexibleInstances #-}
 
--- | This module is mostly self-descriptive
-
 module Control.Monad.Record
     ( maybeAbort
     , maybeAbortM
