@@ -10,9 +10,9 @@ author:        Byron James Johnson
 maintainer:    ByronJohnsonFP@gmail.com
 category:      Control, Data, Monads
 tested-with:   GHC == 7.8.2
-synopsis:      Utility library for monads, particularly those involving state
+synopsis:      Utility library for monads, particularly those involving state.
 description:
-  Utility library for monads, particularly those involving state
+  Utility library for monads, particularly those involving state.
 
 library
   default-language: Haskell2010
