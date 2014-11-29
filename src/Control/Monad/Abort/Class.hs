@@ -22,7 +22,6 @@ import Control.Monad.Trans.Writer.Strict as StrictWriter
 import Control.Monad.Trans
 
 import Control.Monad ()
-import Control.Monad.Instances ()
 import Data.Monoid
 
 class (Monad m) => MonadAbort m where

@@ -15,5 +15,3 @@ module Control.Monad.Abort
 import Control.Monad.Abort.Class
 import Control.Monad.Abort.Instances (mapAbortT)
 import Control.Monad.Trans.Abort (runAbort, runAbortT)
-
-import Control.Monad.Instances ()
