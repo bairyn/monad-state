@@ -1,6 +1,6 @@
 name:          monad-state
 -- Don't forget to bump the tag too.
-version:       0.2.0.1
+version:       0.2.0.2
 cabal-version: >= 1.10
 build-type:    Simple
 license:       BSD3
@@ -60,4 +60,4 @@ source-repository head
 source-repository this
   type:     git
   location: git@github.com:bairyn/monad-state.git
-  tag:      v0.2.0.1
+  tag:      v0.2.0.2
