@@ -10,9 +10,6 @@ import Control.Monad.Trans.Abort
 import Control.Monad.Cont
 import Control.Monad.Error
 import Control.Monad.RWS
-import Control.Monad.Reader
-import Control.Monad.Writer
-import Control.Monad.State
 
 mapAbortT :: (m (Either r a) -> n (Either r' b)) -> AbortT r m a -> AbortT r' n b
 mapAbortT f = AbortT . f . unwrapAbortT
