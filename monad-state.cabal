@@ -32,8 +32,15 @@ library
    ,TypeSynonymInstances
   -- TODO: add version constraints
   build-depends:
-    base                >= 4 && < 5
-   ,fclabels
+    base                >= 4      && < 5
+    -- fclabels first introduces the Data.Label module in 0.11.0.
+    -- fclabels first introduces the 'modify' function in 1.0.
+    -- fclabels first introduces the 'Total' type synonym in 2.0.  (This
+    -- package can be trivially updated to support 1.0; c.f. documentation in
+    -- "Control.Monad.Record".  Supporting both versions is yet to be done;
+    -- CPP can be used for this.
+   --,fclabels            >= 1.0    && < 2.1
+   ,fclabels            >= 2.0    && < 2.1
    ,transformers
    ,monads-tf
    ,AbortT-transformers
