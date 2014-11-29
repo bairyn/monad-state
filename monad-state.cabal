@@ -6,7 +6,7 @@ license:               BSD3
 license-file:          LICENSE
 copyright:             Copyright (C) 2010 Byron James Johnson
 author:                Byron James Johnson
-maintainer:            KrabbyKrap@gmail.com
+maintainer:            ByronJohnsonFP@gmail.com
 synopsis:              Utility library for monads, particularly those involving state
 description:           Utility library for monads, particularly those involving state
 category:              Control, Data, Monads
@@ -21,5 +21,5 @@ library
     other-extensions:  TypeFamilies, MultiParamTypeClasses, TypeOperators, PostfixOperators, FlexibleInstances, FlexibleContexts, TypeSynonymInstances
 
 source-repository head
-    type:              darcs
-    location:          http://patch-tag.com/r/bob/monad-state
+    type:              git
+    location:          git@github.com:bairyn/monad-state.git
