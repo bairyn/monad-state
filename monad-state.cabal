@@ -1,25 +1,56 @@
-name:                  monad-state
-version:               0.1.1.3
-cabal-version:         >= 1.10
-build-type:            Simple
-license:               BSD3
-license-file:          LICENSE
-copyright:             Copyright (C) 2010 Byron James Johnson
-author:                Byron James Johnson
-maintainer:            ByronJohnsonFP@gmail.com
-synopsis:              Utility library for monads, particularly those involving state
-description:           Utility library for monads, particularly those involving state
-category:              Control, Data, Monads
-tested-with:           GHC == 7.0.2
+name:          monad-state
+-- Don't forget to bump the tag too.
+version:       0.1.1.3
+cabal-version: >= 1.10
+build-type:    Simple
+license:       BSD3
+license-file:  LICENSE
+copyright:     Copyright (C) 2010 Byron James Johnson
+author:        Byron James Johnson
+maintainer:    ByronJohnsonFP@gmail.com
+category:      Control, Data, Monads
+tested-with:   GHC == 7.0.2
+synopsis:      Utility library for monads, particularly those involving state
+description:
+  Utility library for monads, particularly those involving state
 
 library
-    default-language:  Haskell2010
-    hs-source-dirs:    src
-    build-depends:     base >= 4 && < 5, fclabels, transformers, monads-tf, AbortT-transformers
-    exposed-modules:   Control.Monad.Abort, Control.Monad.Abort.Class, Control.Monad.Abort.Instances, Control.Monad.Record, Control.Monad.Runnable, Control.Monad.Short, System.Timeout.Monad
-    ghc-options:       -Wall
-    other-extensions:  TypeFamilies, MultiParamTypeClasses, TypeOperators, PostfixOperators, FlexibleInstances, FlexibleContexts, TypeSynonymInstances
+  default-language: Haskell2010
+  hs-source-dirs:   src
+  ghc-options:      -Wall
+  default-extensions:
+    --,GADTs
+    --,TemplateHaskell
+    --,DeriveDataTypeable
+  other-extensions:
+    TypeFamilies
+   ,MultiParamTypeClasses
+   ,TypeOperators
+   ,PostfixOperators
+   ,FlexibleInstances
+   ,FlexibleContexts
+   ,TypeSynonymInstances
+  -- TODO: add version constraints
+  build-depends:
+    base                >= 4 && < 5
+   ,fclabels
+   ,transformers
+   ,monads-tf
+   ,AbortT-transformers
+  exposed-modules:
+    Control.Monad.Abort
+   ,Control.Monad.Abort.Class
+   ,Control.Monad.Abort.Instances
+   ,Control.Monad.Record
+   ,Control.Monad.Runnable
+   ,Control.Monad.Short
+   ,System.Timeout.Monad
 
 source-repository head
-    type:              git
-    location:          git@github.com:bairyn/monad-state.git
+  type:     git
+  location: git@github.com:bairyn/monad-state.git
+
+source-repository this
+  type:     git
+  location: git@github.com:bairyn/monad-state.git
+  tag:      v0.1.1.3
