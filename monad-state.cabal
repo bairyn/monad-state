@@ -1,16 +1,21 @@
-name:          monad-state
--- Don't forget to bump the tag too.
-version:       0.2.0.2
-cabal-version: >= 1.10
-build-type:    Simple
-license:       BSD3
-license-file:  LICENSE
-copyright:     Copyright (C) 2010 Byron James Johnson
-author:        Byron James Johnson
-maintainer:    ByronJohnsonFP@gmail.com
-category:      Control, Data, Monads
-tested-with:   GHC == 7.8.2
-synopsis:      Utility library for monads, particularly those involving state.
+name:               monad-state
+-- Don't forget to bump the tag and CHANGELOG placeholder too.
+version:            0.2.0.2
+cabal-version:      >= 1.18
+build-type:         Simple
+license:            BSD3
+license-file:       LICENSE
+copyright:          Copyright (C) 2010 Byron James Johnson
+author:             Byron James Johnson
+maintainer:         ByronJohnsonFP@gmail.com
+category:           Control, Data, Monads
+tested-with:        GHC == 7.8.2
+extra-source-files:
+-- The extra-doc-files property requires cabal-version >= 1.18.
+extra-doc-files:
+  README.md
+ ,CHANGELOG.md
+synopsis:           Utility library for monads, particularly those involving state.
 description:
   Utility library for monads, particularly those involving state.
 
